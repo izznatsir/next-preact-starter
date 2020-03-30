@@ -1,34 +1,31 @@
 # Preact example
 
-This example uses [Preact](https://github.com/preactjs/preact) instead of React. It's a React like UI framework which is fast and small.
+A starter to use NextJS together with [Preact](https://preactjs.com/) instead of React. This starter includes some extra perks: [TailwindCSS](https://tailwindcss.com/), [Framer Motion](https://www.framer.com/motion/), [XState](https://xstate.js.org/), [URQL](https://formidable.com/open-source/urql/), [Typescript](https://www.typescriptlang.org/), and [Prettier](https://prettier.io/).
 
 ## How to use
 
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+Clone this repository:
 
 ```bash
-npm init next-app --example using-preact using-preact-app
-# or
-yarn create next-app --example using-preact using-preact-app
+# clone using HTTPS protocol
+
+git clone https://github.com/izznatsir/next-preact-starter.git
+
+# clone using SSH protocol
+
+git clone git@github.com:izznatsir/next-preact-starter.git
 ```
 
-### Download manually
-
-Download the example:
+Install it and start a development server:
 
 ```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/using-preact
-cd using-preact
-```
+# if you're using NPM
 
-Install it and run:
-
-```bash
 npm install
 npm run dev
-# or
+
+# if you're using Yarn
+
 yarn
 yarn dev
 ```
