@@ -8,10 +8,10 @@ module.exports = {
           {
             content: ['./pages/**/*.tsx', './components/**/*.tsx'],
             defaultExtractor: (content) =>
-              content.match(/[\w-/:]+(?<!:)/g) || []
-          }
+              content.match(/[\w-/:]+(?<!:)/g) || [],
+          },
         ]
       : undefined,
-    'postcss-preset-env'
-  ]
+    'postcss-preset-env',
+  ],
 };

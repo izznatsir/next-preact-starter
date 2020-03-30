@@ -1,7 +1,7 @@
 module.exports = {
   experimental: {
     modern: true,
-    polyfillsOptimization: true
+    polyfillsOptimization: true,
   },
 
   webpack(config, { dev, isServer }) {
@@ -11,14 +11,14 @@ module.exports = {
       const preactModules = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider)[\\/]/;
       if (cacheGroups.framework) {
         cacheGroups.preact = Object.assign({}, cacheGroups.framework, {
-          test: preactModules
+          test: preactModules,
         });
         cacheGroups.commons.name = 'framework';
       } else {
         cacheGroups.preact = {
           name: 'commons',
           chunks: 'all',
-          test: preactModules
+          test: preactModules,
         };
       }
     }
@@ -36,5 +36,5 @@ module.exports = {
     }
 
     return config;
-  }
+  },
 };

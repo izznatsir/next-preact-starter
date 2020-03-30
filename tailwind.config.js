@@ -3,7 +3,7 @@ const {
   screenPatch,
   spacingPatch,
   maxWidthPatch,
-  gridPatch
+  gridPatch,
 } = require('./tailwind-patches');
 
 module.exports = {
@@ -11,13 +11,13 @@ module.exports = {
     extend: {
       screens: screenPatch,
       spacing: spacingPatch,
-      maxWidth: maxWidthPatch
-    }
+      maxWidth: maxWidthPatch,
+    },
   },
   variants: {},
   plugins: [
-    plugin(function({ addUtilities }) {
+    plugin(function ({ addUtilities }) {
       addUtilities(gridPatch);
-    })
-  ]
+    }),
+  ],
 };

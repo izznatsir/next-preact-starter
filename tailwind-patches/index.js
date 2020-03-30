@@ -2,7 +2,7 @@ const screenPatch = {
   '2xl': '1440px',
   '3xl': '1600px',
   '4xl': '1920px',
-  '5xl': '2560px'
+  '5xl': '2560px',
 };
 
 const spacingPatch = {
@@ -87,7 +87,7 @@ const spacingPatch = {
   '97': '24.25rem',
   '98': '24.5rem',
   '99': '24.75rem',
-  '100': '25rem'
+  '100': '25rem',
 };
 
 const maxWidthPatch = {
@@ -95,7 +95,7 @@ const maxWidthPatch = {
   '8xl': '85rem',
   '1/4': '25%',
   '1/2': '50%',
-  '3/4': '75%'
+  '3/4': '75%',
 };
 
 const gridPatch = {
@@ -134,12 +134,12 @@ const gridPatch = {
   '.place-self-start': { 'place-self': 'start' },
   '.place-self-end': { 'place-self': 'end' },
   '.place-self-center': { 'place-self': 'center' },
-  '.place-self-stretch': { 'place-self': 'stretch' }
+  '.place-self-stretch': { 'place-self': 'stretch' },
 };
 
 module.exports = {
   screenPatch,
   spacingPatch,
   maxWidthPatch,
-  gridPatch
+  gridPatch,
 };
