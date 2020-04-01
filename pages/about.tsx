@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default () => (
+const About = () => (
   <main className='text-center'>
     <h1>About us</h1>
     <Link href='/'>
@@ -9,3 +9,5 @@ export default () => (
     </Link>
   </main>
 );
+
+export default About;

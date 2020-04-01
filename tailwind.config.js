@@ -1,5 +1,9 @@
 const plugin = require('tailwindcss/plugin');
 const {
+  changeREMValue,
+  baseFiveFontSize,
+} = require('./tailwind-patches/base-five');
+const {
   screenPatch,
   spacingPatch,
   maxWidthPatch,
@@ -8,6 +12,7 @@ const {
 
 module.exports = {
   theme: {
+    fontSize: baseFiveFontSize,
     extend: {
       screens: screenPatch,
       spacing: spacingPatch,
@@ -16,7 +21,8 @@ module.exports = {
   },
   variants: {},
   plugins: [
-    plugin(function ({ addUtilities }) {
+    plugin(function ({ addBase, addUtilities, config }) {
+      changeREMValue(addBase, config);
       addUtilities(gridPatch);
     }),
   ],

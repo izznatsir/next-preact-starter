@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default () => (
-  <main className='text-center'>
+const Home = () => (
+  <main className='text-center m-2'>
     <h1>Hello from Preact</h1>
 
     <Link href='/about'>
@@ -10,3 +10,5 @@ export default () => (
     </Link>
   </main>
 );
+
+export default Home;
