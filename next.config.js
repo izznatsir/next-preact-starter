@@ -1,4 +1,6 @@
-module.exports = {
+const withPlugins = require('next-compose-plugins');
+
+const nextConfig = {
   experimental: {
     modern: true,
     polyfillsOptimization: true,
@@ -38,3 +40,5 @@ module.exports = {
     return config;
   },
 };
+
+module.exports = withPlugins([], nextConfig);
